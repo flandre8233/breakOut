@@ -9,11 +9,11 @@ public class myNetworkManager : MonoBehaviour {
 
     void OnServerInitialized()
     {
-        Debug.Log("gggff");
+        //Debug.Log("gggff");
         SpawnplayerPaddle(leftPaddleSpawnPoint.position, paddleType.left);
     }
 
-    private void OnConnectedToServer()
+    void OnConnectedToServer()
     {
         SpawnplayerPaddle(RightPaddleSpawnPoint.position, paddleType.right);
     }
